@@ -28,4 +28,5 @@ public class SimpleCalculatorTest {
 	public void testDivideZero(){
 		SimpleCalculator calc = new SimpleCalculator();
 		calc.divide(5,0);
+	}
 }
