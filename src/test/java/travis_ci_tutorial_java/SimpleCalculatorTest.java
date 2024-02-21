@@ -17,4 +17,9 @@ public class SimpleCalculatorTest {
 		SimpleCalculator calc = new SimpleCalculator();
 		assertEquals(calc.subtract(5,3),2);
 	}
+
+	@Test
+	public void testDivideZero(){
+		SimpleCalculator calc = new SimpleCalculator();
+		assertException(calc.divide(5,0), java.lang.ArithmeticException)
 }
