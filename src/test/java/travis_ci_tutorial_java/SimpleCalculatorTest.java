@@ -19,7 +19,13 @@ public class SimpleCalculatorTest {
 	}
 
 	@Test
+	public void multiply(){
+		SimpleCalculator calc = new SimpleCalculator();
+		assertEquals(calc.multiply(3,4),12);
+	}
+	
+	@Test(expected=java.lang.ArithmeticException.class)
 	public void testDivideZero(){
 		SimpleCalculator calc = new SimpleCalculator();
-		assertException(calc.divide(5,0), java.lang.ArithmeticException)
+		calc.divide(5,0);
 }
